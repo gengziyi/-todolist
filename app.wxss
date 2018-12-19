@@ -1,0 +1,32 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+}
+li{
+  display: block;
+  background: #666;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+}
+input{
+  border-radius: 5px;
+  margin: 0.5rem 0.5rem;
+  padding: 0.2rem 1rem;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 0 rgba(225, 225, 225, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+}
+.finish li{
+  background: #aaa;
+}
+h2{
+  color: #fff;
+  background-color: #409eff;
+  display: block;
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+  margin-bottom: 0.5rem;
+}

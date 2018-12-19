@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <input type='text' bindconfirm="additem" placeholder='待办事项'  value="{{newitem}}" />
+  <h2>未完成事项</h2>
+  <p wx:if="{{item.todolist}}">暂无未完成事项，请添加待办事项</p>
+  <ul>
+    <li bindtap="fn" wx:if="{{!item.complete}}" data-index="{{index}}" wx:for="{{todolist}}" wx:for-item="item" wx:key="item">
+      {{item.todo}}
+    </li>
+  </ul>
+
+  <h2>已完成事项</h2>
+  <p wx:if="{{item.todolist}}">暂无已完成事项</p>
+   <ul class="finish">
+    <li bindtap="fn" wx:if="{{item.complete}}" data-index="{{index}}" wx:for="{{todolist}}" wx:for-item="item" wx:key="item">
+      {{item.todo}}
+    </li>
+  </ul>
+</view>
